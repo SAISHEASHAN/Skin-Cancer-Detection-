@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Result</h2>
+        <img src="{{ url_for('uploaded_file', filename=filename) }}" class="img-fluid mb-3" alt="Uploaded Image">
+        <h4 class="mb-3">Risk Level: {{ risk_level }}</h4>
+        <h4 class="mb-3">Cancer Type: {{ cancer_type }}</h4>
+    </div>
+</body>
+</html>
